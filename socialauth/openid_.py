@@ -2,8 +2,8 @@ from openid.consumer.consumer import Consumer
 from openid.extensions import pape, sreg, ax
 from openid.store import filestore
 
+import socialauth
 from socialauth import utils
-from decalogy.model.user import User
 
 
 SREG_FIELDS = ['nickname', 'email', 'fullname']
@@ -110,9 +110,9 @@ def process(request, environ, start_response):
         user_id = info.getDisplayIdentifier()
 
         user_to_save = False
-        user = User.getByOpenIdIdentifier(user_id)
+        user = socialauth.User.getByOpenIdIdentifier(user_id)
         if user is None:
-            user = User(openid_identifier=user_id)
+            user = socialauth.User(openid_identifier=user_id)
             user_to_save = True
 
         sreg_resp = sreg.SRegResponse.fromSuccessResponse(info)

@@ -12,8 +12,8 @@ except ImportError:
     import simplejson as json
 import urllib
 
+import socialauth
 from socialauth import utils
-from decalogy.model.user import User
 
 
 app_id = None
@@ -69,10 +69,10 @@ def process(request, environ, start_response):
     profile = json.load(req)
     fb_userid = profile['id']
 
-    user = User.getByFacebookUID(fb_userid)
+    user = socialauth.User.getByFacebookUID(fb_userid)
 
     if not user:
-        user = User.create(firstname=profile.get('first_name'), 
+        user = socialauth.User.create(firstname=profile.get('first_name'), 
                            lastname=profile.get('last_name'),
                            fb_id=profile['id'],
                            fb_oauth2_token=access_token)

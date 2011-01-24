@@ -1,8 +1,8 @@
 import oauth2 as oauth
 import cgi
 
+import socialauth
 from socialauth import utils
-from decalogy.model.user import User
 
 
 request_token_url = 'http://twitter.com/oauth/request_token'
@@ -78,9 +78,9 @@ def process(request, environ, start_response):
     # Step 3. Lookup the user or create them if they don't exist.
     user_to_save = False
     user_id = access_token['user_id']
-    user = User.getByTwitterId(user_id)
+    user = socialauth.User.getByTwitterId(user_id)
     if user is None:
-        user = User(twitter_id=user_id)
+        user = socialauth.User(twitter_id=user_id)
         user_to_save = True
     email = "%s@twitter.com" % access_token['screen_name']
     if user.email != email:
