@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title> Social auth login page example </title>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+</head>
+
+<body>
+ 
+  <h1>Select your identity provider</h1>
+
+  <div class="block">
+
+    <div class="socialauth_waiting" style="display:none;">
+      <img src="../static/img/indicator.gif"/>
+      <p>
+        Connexion with the identity provider, please wait a few seconds...
+      </p>
+      <div class="clear"> </div>
+    </div>
+
+    <div class="socialauth">
+      <ul class="socialauth main">
+        <li> <a class="socialauth twitter"
+                href="/socialauth/twitter/login">Twitter</a>
+        </li>
+        <li> <a class="socialauth facebook"
+                href="/socialauth/fb/login">Facebook</a>
+        </li>
+        <li> <a class="socialauth google"
+                href="/socialauth/openid/login?url=https://www.google.com/accounts/o8/id">Google</a>
+        </li>
+
+        <li> <a class="socialauth yahoo"
+                href="/socialauth/openid/login?url=http://yahoo.com/">Yahoo</a>
+        </li>
+      </ul>
+
+      <ul class="socialauth secondary">
+        <li> <a class="socialauth openid"
+                href="http://__URL__">OpenID</a>
+        </li>
+        <li> <a class="socialauth myopenid"
+                href="http://__username__.myopenid.com/">myOpenID</a> 
+        </li> 
+        <li> <a class="socialauth flickr"
+                href="http://flickr.com/__username__/">Flickr</a> 
+        </li> 
+        <li> <a class="socialauth technorati"
+                href="http://technorati.com/people/technorati/__username__/">Technorati</a> 
+        </li> 
+        <li> <a class="socialauth wordpress"
+                href="http://__username__.wordpress.com">Wordpress</a> 
+        </li> 
+        <li> <a class="socialauth blogger"
+                href="http://__username__.blogspot.com/">Blogger</a> 
+        </li> 
+        <li> <a class="socialauth livejournal"
+                href="http://__username__.livejournal.com">LiveJournal</a> 
+        </li> 
+        <li> <a class="socialauth claimid"
+                href="http://claimid.com/__username__">ClaimID</a> 
+        </li> 
+        <li> <a class="socialauth vidoop"
+                href="http://__username__.myvidoop.com/">Vidoop</a> 
+        </li> 
+        <li> <a class="socialauth verisign"
+                href="http://__username__.pip.verisignlabs.com/">Verisign</a> 
+        </li> 
+        <li> <a class="socialauth myspace"
+                href="http://www.myspace.com/__username__">MySpace</a> 
+        </li> 
+        <li> <a class="socialauth orange"
+                href="http://openid.orange.fr/">Orange</a> 
+        </li> 
+      </ul> 
+ 
+      <div class="clear"> </div> 
+ 
+      <form class="socialauth hidden" method="get" action="/socialauth/openid/login"> 
+        <p> 
+          <label id="openidurl_label" for="openidurl">Your OpenID URL:</label> 
+          <input id="openidurl" type="text" name="url" /> 
+          <input type="submit" value="Go!" /> 
+        </p> 
+      </form> 
+ 
+    </div> 
+ 
+  </div> 
+ 
+ 
+  <script type="text/javascript" src="../static/js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="../static/js/signin.js"></script> 
+  <script type="text/javascript" src="../static/js/selector.js"></script> 
+ 
+</body> 
+</html> 
