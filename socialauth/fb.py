@@ -12,7 +12,7 @@ except ImportError:
     import simplejson as json
 import urllib
 
-from decalogy.lib.socialauth import utils
+from socialauth import utils
 from decalogy.model.user import User
 
 

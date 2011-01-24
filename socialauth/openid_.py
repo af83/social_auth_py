@@ -2,7 +2,7 @@ from openid.consumer.consumer import Consumer
 from openid.extensions import pape, sreg, ax
 from openid.store import filestore
 
-from decalogy.lib.socialauth import utils
+from socialauth import utils
 from decalogy.model.user import User
 
 

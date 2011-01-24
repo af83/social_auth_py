@@ -1,7 +1,7 @@
 import oauth2 as oauth
 import cgi
 
-from decalogy.lib.socialauth import utils
+from socialauth import utils
 from decalogy.model.user import User
 
 
