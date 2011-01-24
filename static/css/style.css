@@ -1,0 +1,118 @@
+h1 {
+  color: #333;
+  margin-left: -40px;
+  text-align: center;
+}
+
+div.socialauth {
+  position: relative;
+  max-width: 500px;
+  margin-left: 80px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+div.socialauth_waiting {
+  text-align: center;
+}
+
+.main a.socialauth {
+  border:1px solid #DDDDDD;
+  float:left;
+  height:60px;
+  margin:15px 50px 35px 3px;
+  width:100px;
+  font-size: 0;
+  text-color: white;
+}
+
+.socialauth.twitter {
+  background:#FFFFFF url(../img/twitter.png) no-repeat scroll center center;  
+}
+
+.socialauth.google {
+  background:#FFFFFF url(../img/google.gif) no-repeat scroll center center; 
+}
+
+.socialauth.yahoo {
+  background:#FFFFFF url(../img/yahoo.gif) no-repeat scroll center center; 
+}
+
+.socialauth.facebook {
+  background:#FFFFFF url(../img/facebook.png) no-repeat scroll center center;
+}
+
+ul.socialauth {
+  list-style-type: none;  
+}
+
+ul.socialauth.main {
+  max-width: 400px;
+}
+
+ul.socialauth.main li {
+ left-padding: 30px;
+ right-padding: 30px;
+}
+
+ul.socialauth.secondary {
+  padding-left: 400px;
+}
+
+ul.socialauth.secondary li a,
+#openidurl_label {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #333;
+  margin-top: 2px;
+  font-size: medium;
+}
+
+.socialauth.openid {
+  background:transparent url(../img/openid.png) no-repeat scroll 0 center;
+}
+
+.socialauth.myopenid {
+  background:transparent url(../img/myopenid.png) no-repeat scroll 0 center;
+}
+
+.socialauth.flickr {
+  background:transparent url(../img/flickr.png) no-repeat scroll 0 center;
+}
+
+.socialauth.technorati {
+  background:transparent url(../img/technorati.png) no-repeat scroll 0 center;
+}
+
+.socialauth.wordpress {
+  background:transparent url(../img/wordpress.png) no-repeat scroll 0 center;
+}
+
+.socialauth.blogger {
+  background:transparent url(../img/blogger.png) no-repeat scroll 0 center;
+}
+
+.socialauth.livejournal {
+  background:transparent url(../img/livejournal.png) no-repeat scroll 0 center;
+}
+
+.socialauth.claimid {
+  background:transparent url(../img/claimid.png) no-repeat scroll 0 center;
+}
+
+.socialauth.vidoop {
+  background:transparent url(../img/vidoop.png) no-repeat scroll 0 center;
+}
+
+.socialauth.verisign {
+  background:transparent url(../img/verisign.png) no-repeat scroll 0 center;
+}
+
+.socialauth.myspace {
+  background:transparent url(../img/myspace.png) no-repeat scroll 0 center;
+}
+
+.socialauth.orange {
+  background:transparent url(../img/orange.png) no-repeat scroll 0 center;  
+}
+
