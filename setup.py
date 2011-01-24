@@ -8,7 +8,7 @@ except ImportError:
 setup(
     name='social_auth_py',
     version='0.0.1',
-    description=('Authentication for various identity providers'),
+    description=('Authentication middleware for various identity providers'),
     author='Pierre Ruyssen (AF83)',
     author_email='pierre@ruyssen.fr',
     url='https://github.com/AF83/social_auth_py',
